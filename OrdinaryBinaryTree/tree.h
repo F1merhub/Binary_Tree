@@ -1,7 +1,7 @@
 #ifndef tree_H
 #define tree_H
 
-typedef char* tree_element;
+typedef const char* tree_element; // ЕСЛИ МЕНЯЕШЬ ТИП, ТО НАДО ПОПРАВИТЬ АРГУМЕНТЫ AddNode и Label в TreeDumpDot
 
 const size_t BUFFER_SIZE = 20000;
 

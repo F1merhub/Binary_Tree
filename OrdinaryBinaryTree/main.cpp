@@ -8,17 +8,11 @@
     BinaryTree *Root = NULL;
 
     // Пример вставки элементов в дерево
-    AddNode(&Root, 50);
-    AddNode(&Root, 30);
-    AddNode(&Root, 70);
-    AddNode(&Root, 20);
-    AddNode(&Root, 40);
-    AddNode(&Root, 60);
-    AddNode(&Root, 80);
-    AddNode(&Root, 10);
-    AddNode(&Root, 95);
-    AddNode(&Root, 97);
-    AddNode(&Root, 98);
+    AddNode(&Root, "abc");
+    AddNode(&Root, "def");
+    AddNode(&Root, "zzz");
+    AddNode(&Root, "aaa");
+
 
     TreeTraversal(Root);
 

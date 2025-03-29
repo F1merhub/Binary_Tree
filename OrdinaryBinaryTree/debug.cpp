@@ -17,9 +17,8 @@ TreeErrors TreeDumpDot(BinaryTree* Root)
     // Начало .dot файла с новой цветовой схемой
     buffer_len += snprintf(buffer + buffer_len, BUFFER_SIZE - (size_t)buffer_len,
                            "digraph G {\n"
-                           "\trankdir = TB;\n"
-                           "\tbgcolor=\"#1e1e2e\";\n"
-                           "\tnode [shape=rectangle, style=filled, fontname=Helvetica, fontsize=12, fillcolor=\"#89b4fa\", color=\"#cba6f7\", fontcolor=\"#1e1e2e\"];\n");
+                           "\trankdir = HR;\n"
+                           "\tbgcolor=\"#fcf0d2\";\n");
 
     // Генерация графа
     buffer_len += GenerateGraph(Root, buffer, &buffer_len, BUFFER_SIZE);
@@ -47,15 +46,16 @@ int GenerateGraph(BinaryTree *Node, char* buffer, int* buffer_len, const size_t 
 {
     if (!Node) return 0;
 
+    // Записываем информацию о текущем узле, добавляя порты для левого и правого поддеревьев
     *buffer_len += snprintf(buffer + *buffer_len, BUFFER_SIZE - (size_t)*buffer_len,
-                            "\tnode%p [shape=plaintext; style=filled; color=\"#fcf0d2\"; fillcolor=\"#b2d4fc\"; label = <\n"
-                            "\t\t         <table BORDER=\"0\" CELLBORDER=\"1\" CELLSPACING=\"0\" CELLPADDING=\"6\" BGCOLOR=\"#a1c4fd\" COLOR=\"#4f4f4f\">\n"
-                            "\t\t\t           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: %p</b></FONT></td></tr>\n"
-                            "\t\t\t           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>%03d</b></FONT></td></tr>\n"
-                            "\t\t\t           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Height: <b>%03d</b></FONT></td></tr>\n"
+                            "\tnode%p [shape=plaintext; style=filled; color=\"#fcf0d2\"; label = <\n"
+                            "\t\t         <table BORDER=\"0\" CELLBORDER=\"1\" CELLSPACING=\"0\" CELLPADDING=\"6\" BGCOLOR=\"#bfb58f\" COLOR=\"#4d3d03\">\n"
+                            "\t\t\t           <tr><td align='center' colspan='2'><FONT COLOR='#3a3a3a'><b>Node: %p</b></FONT></td></tr>\n"
+                            "\t\t\t           <tr><td align='center' colspan='2'><FONT COLOR='#4d3d03'>Value: <b>%03d</b></FONT></td></tr>\n"
+                            "\t\t\t           <tr><td align='center' colspan='2'><FONT COLOR='#4d3d03'>Height: <b>%03d</b></FONT></td></tr>\n"
                             "\t\t\t           <tr>\n"
                             "\t\t\t               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: %p</b></FONT></td>\n"
-                            "\t\t\t               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: %p</b></FONT></td>\n"
+                            "\t\t\t               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#8b0000'><b>Right: %p</b></FONT></td>\n"
                             "\t\t\t           </tr>\n"
                             "\t\t         </table> >];\n",
                             Node, Node, Node->value, Node->height, Node->left, Node->right);
@@ -65,7 +65,7 @@ int GenerateGraph(BinaryTree *Node, char* buffer, int* buffer_len, const size_t 
     {
         *buffer_len += GenerateGraph(Node->left, buffer, buffer_len, BUFFER_SIZE);
         *buffer_len += snprintf(buffer + *buffer_len, BUFFER_SIZE - (size_t)*buffer_len,
-                                 "\tnode%p:left -> node%p [color=\"#a6e3a1\"];\n", Node, Node->left);
+                                 "\t node%p:left -> node%p [color=\"#006400\"style=bold; weight=1000; ];\n", Node, Node->left);
     }
 
     // Рекурсивно генерируем правое поддерево
@@ -73,7 +73,7 @@ int GenerateGraph(BinaryTree *Node, char* buffer, int* buffer_len, const size_t 
     {
         *buffer_len += GenerateGraph(Node->right, buffer, buffer_len, BUFFER_SIZE);
         *buffer_len += snprintf(buffer + *buffer_len, BUFFER_SIZE - (size_t)*buffer_len,
-                                 "\tnode%p:right -> node%p [color=\"#f9e2af\"];\n", Node, Node->right);
+                                 "\t node%p:right -> node%p [color=\"#8b0000\"style=bold; weight=1000; ];\n", Node, Node->right);
     }
 
     return 0;
