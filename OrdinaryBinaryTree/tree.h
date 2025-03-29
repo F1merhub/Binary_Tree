@@ -6,7 +6,7 @@
 #include <assert.h>
 #include<string.h>
 
-typedef const char* tree_element; // ЕСЛИ МЕНЯЕШЬ ТИП, ТО НАДО ПОПРАВИТЬ АРГУМЕНТЫ AddNode и Label в TreeDumpDot
+typedef const char* tree_element; // ЕСЛИ МЕНЯЕШЬ ТИП, ТО НАДО ПОПРАВИТЬ АРГУМЕНТЫ AddNode, Label в TreeDumpDot и TreeTraversal если нужно
 
 const size_t BUFFER_SIZE = 20000;
 

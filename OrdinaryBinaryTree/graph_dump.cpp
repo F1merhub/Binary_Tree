@@ -4,7 +4,6 @@
 
 TreeErrors TreeDumpDot(BinaryTree* Root)
 {
-    static int dump_counter = 0;
     char* buffer = (char*)calloc(BUFFER_SIZE, sizeof(char));
     if (buffer == NULL)
     {
