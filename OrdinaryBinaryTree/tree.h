@@ -6,9 +6,27 @@
 #include <assert.h>
 #include<string.h>
 
-typedef const char* tree_element; // ЕСЛИ МЕНЯЕШЬ ТИП, ТО НАДО ПОПРАВИТЬ АРГУМЕНТЫ AddNode, Label в TreeDumpDot и TreeTraversal если нужно
 
-const size_t BUFFER_SIZE = 20000;
+
+#define TREE_ELEMENT_CHAR
+
+
+
+#if defined(TREE_ELEMENT_CHAR)
+
+typedef const char* tree_element;
+#define TREE_ELEM_SPEC "%s"
+
+#elif defined(TREE_ELEMENT_INT)
+
+typedef int tree_element;
+...
+
+#else
+
+#error "Error"
+
+#endif
 
 typedef struct BinaryTree
 {
@@ -20,20 +38,23 @@ typedef struct BinaryTree
 
 enum Type
 {
-    INT = 0x000001,
-    STRING = 0x000002,
+    INT =    1,
+    STRING = 2,
+    DOUBLE = 3,
 };
 
 
 enum TreeErrors
 {
-    OK                    = 0x000000,
-    ALLOC_ERROR           = 0x000001,
-    NODE_NULL             = 0x000002,
-    FILE_NOT_OPEN         = 0x000004,
+    OK                    = 0,
+    ALLOC_ERROR           = 1,
+    NODE_NULL             = 2,
+    FILE_NOT_OPEN         = 3,
 };
 
 const enum Type TREE_ELEMENT_TYPE = STRING; // как сделать по другому?
+const size_t BUFFER_SIZE = 20000;
+
 
 TreeErrors CreateNode(BinaryTree **Node, tree_element value);
 TreeErrors FreeTree(BinaryTree **Node);
