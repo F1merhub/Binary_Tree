@@ -39,13 +39,7 @@ TreeErrors TreeDumpDot(BinaryTree* Root)
     fclose(dump_file);
     free(buffer);
 
-    // Генерация PNG изображения с использованием Graphviz
-    // char png_filename[PNG_NAME_SIZE];
-    // snprintf(png_filename, PNG_NAME_SIZE, "GraphDump/img/dump_%d.png", dump_counter++);
-    //
-    // char command[256];
-    // snprintf(command, sizeof(command), "dot -Tpng GraphDump/dump.dot -o %s", png_filename);
-    // system(command);
+    
 
     return OK;
 }
