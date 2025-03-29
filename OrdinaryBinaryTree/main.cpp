@@ -1,9 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
 #include "tree.h"
 
-    int main()
+int main()
 {
     BinaryTree *Root = NULL;
 
@@ -12,9 +9,6 @@
     AddNode(&Root, "def");
     AddNode(&Root, "zzz");
     AddNode(&Root, "aaa");
-
-
-    TreeTraversal(Root);
 
     // Дамп дерева в .dot и создание графического изображения
     TreeDumpDot(Root);
@@ -64,7 +58,7 @@ TreeErrors AddNode(BinaryTree **Root, tree_element value)
         return CreateNode(Root, value);
     }
 
-    if (value < (*Root)->value)
+    if (CompareValue(value, (*Root)->value) < 0)  // Использование CompareValue
     {
         return AddNode(&((*Root)->left), value);
     }
@@ -87,7 +81,7 @@ TreeErrors AddNodeLoop(BinaryTree **Root, tree_element value)
 
     while (cur != NULL)
     {
-        if (value < cur->value)
+        if (CompareValue(value, cur->value) < 0)  // Использование CompareValue
         {
             if (cur->left != NULL)
             {
@@ -121,9 +115,10 @@ BinaryTree* FindNode(BinaryTree *Root, tree_element value) // рекурсивн
         return NULL;
     }
 
-    if (Root->value == value) return Root;
+    if (CompareValue(Root->value, value) == 0)  // Использование CompareValue
+        return Root;
 
-    if (value < Root->value)
+    if (CompareValue(value, Root->value) < 0)  // Использование CompareValue
     {
         return FindNode(Root->left, value);
     }
@@ -156,11 +151,11 @@ TreeErrors DeleteNode(BinaryTree **Root, tree_element value)
         return NODE_NULL;
     }
 
-    if (value < (*Root)->value)
+    if (CompareValue(value, (*Root)->value) < 0)  // Использование CompareValue
     {
         return DeleteNode(&((*Root)->left), value);
     }
-    else if (value > (*Root)->value)
+    else if (CompareValue(value, (*Root)->value) > 0)  // Использование CompareValue
     {
         return DeleteNode(&((*Root)->right), value);
     }
@@ -196,3 +191,13 @@ TreeErrors DeleteNode(BinaryTree **Root, tree_element value)
     return OK;
 }
 
+int CompareValue(tree_element a, tree_element b) {
+    switch (TREE_ELEMENT_TYPE) {
+        case (INT):
+            return a - b; // Сравнение целых чисел
+        case (STRING):
+            return strcmp(a, b); // Сравнение строк
+        default:
+            return 0; //unknown type
+    }
+}
