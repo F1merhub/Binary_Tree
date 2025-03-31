@@ -6,11 +6,7 @@
 #include <assert.h>
 #include<string.h>
 
-
-
 #define TREE_ELEMENT_CHAR
-
-
 
 #if defined(TREE_ELEMENT_CHAR)
 
@@ -20,7 +16,7 @@ typedef const char* tree_element;
 #elif defined(TREE_ELEMENT_INT)
 
 typedef int tree_element;
-...
+#define TREE_ELEM_SPEC "%d"
 
 #else
 
