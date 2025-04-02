@@ -7,7 +7,7 @@
 */
 TreeErrors CreateNode(BinaryTree **Node, tree_element value)
 {
-    assert(*Node == NULL && Node != NULL);
+    assert(Node != NULL && *Node != NULL);
     *Node = (BinaryTree*)calloc(1, sizeof(BinaryTree));
 
     if (*Node == NULL)
@@ -41,7 +41,7 @@ TreeErrors FreeTree(BinaryTree **Node)
     return OK;
 }
 
-TreeErrors AddNode(BinaryTree **Root, tree_element value) // TODO если объекты равны
+TreeErrors AddNode(BinaryTree **Root, tree_element value)
 {
     assert(Root != NULL);
 
@@ -50,8 +50,7 @@ TreeErrors AddNode(BinaryTree **Root, tree_element value) // TODO если об�
         return CreateNode(Root, value);
     }
 
-    TreeErrors error_buffer = OK;
-    if (CompareValue(value, (*Root)->value) < 0)  // Использование CompareValue
+    if (CompareValue(value, (*Root)->value) < 0)
     {
         return AddNode(&((*Root)->left), value);
     }
@@ -65,6 +64,8 @@ TreeErrors AddNode(BinaryTree **Root, tree_element value) // TODO если об�
 
 TreeErrors AddNodeLoop(BinaryTree **Root, tree_element value)
 {
+    assert(Root != NULL);
+
     if (*Root == NULL)
     {
         return CreateNode(Root, value);
@@ -74,7 +75,7 @@ TreeErrors AddNodeLoop(BinaryTree **Root, tree_element value)
 
     while (cur != NULL)
     {
-        if (CompareValue(value, cur->value) < 0)  // Использование CompareValue
+        if (CompareValue(value, cur->value) < 0)
         {
             if (cur->left != NULL)
             {
@@ -103,10 +104,7 @@ TreeErrors AddNodeLoop(BinaryTree **Root, tree_element value)
 
 BinaryTree* FindNode(BinaryTree *Root, tree_element value) // рекурсивный поиск
 {
-    if (Root == NULL)
-    {
-        return NULL;
-    }
+    assert(Root != NULL);
 
     if (CompareValue(Root->value, value) == 0)  // Использование CompareValue
         return Root;
@@ -125,10 +123,7 @@ BinaryTree* FindNode(BinaryTree *Root, tree_element value) // рекурсивн
 
 TreeErrors TreeTraversal(BinaryTree *Node)
 {
-    if (Node == NULL)
-    {
-        return NODE_NULL;
-    }
+    assert(Node != NULL);
 
     TreeTraversal(Node->left);
     printf("ELEMENT_SPECIFICATOR ", Node->value);
@@ -139,10 +134,7 @@ TreeErrors TreeTraversal(BinaryTree *Node)
 
 TreeErrors DeleteNode(BinaryTree **Root, tree_element value)
 {
-    if (*Root == NULL)
-    {
-        return NODE_NULL;
-    }
+    assert(Root != NULL && *Root != NULL); // нельзя передавать нулевой указатель и нельзя, чтобы указатель указывал на несуществующий узел
 
     if (CompareValue(value, (*Root)->value) < 0)  // Использование CompareValue
     {
@@ -191,6 +183,9 @@ int CompareValue(tree_element a, tree_element b) {
         case (STRING):
             return strcmp(a, b);
         default:
-            return 0;
+            {
+                assert(0);
+                return 0;
+            }
     }
 }

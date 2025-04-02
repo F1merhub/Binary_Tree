@@ -6,7 +6,7 @@
 #include <assert.h>
 #include<string.h>
 
-#define TREE_ELEMENT_CHAR
+#define TREE_ELEMENT_CHAR // NOTE в акинаторе используются лишь строки, для ввода типа данных нужно менять compare_value для вывода ошибок, а не assert
 
 #if defined(TREE_ELEMENT_CHAR)
 
@@ -46,6 +46,7 @@ enum TreeErrors
     ALLOC_ERROR           = 1,
     NODE_NULL             = 2,
     FILE_NOT_OPEN         = 3,
+    UNKNOWN_TYPE          = 4
 };
 
 const enum Type TREE_ELEMENT_TYPE = STRING; // как сделать по другому?
