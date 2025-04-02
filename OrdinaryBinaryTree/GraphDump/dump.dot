@@ -2,143 +2,143 @@ digraph G {
 	rankdir = TB;
 	bgcolor="#1e1e2e";
 	node [shape=rectangle, style=filled, fontname=Helvetica, fontsize=12, fillcolor="#89b4fa", color="#cba6f7", fontcolor="#1e1e2e"];
-	node000001C23033A790 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA610 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A790</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA610</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>“My uncle’s goodness is extreme,</b></FONT></td></tr>
 			           <tr>
-			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 000001C23033A700</b></FONT></td>
+			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 00000211FA4BA730</b></FONT></td>
 			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 0000000000000000</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A700 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA730 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A700</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA730</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>If seriously he hath disease;</b></FONT></td></tr>
 			           <tr>
-			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 000001C23033A910</b></FONT></td>
-			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 000001C23033A610</b></FONT></td>
+			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 00000211FA4BA700</b></FONT></td>
+			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 00000211FA4BA7F0</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A910 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA700 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A910</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA700</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>He hath acquired the world’s esteem</b></FONT></td></tr>
 			           <tr>
-			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 000001C23033A6D0</b></FONT></td>
+			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 00000211FA4BA880</b></FONT></td>
 			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 0000000000000000</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A6D0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA880 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A6D0</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA880</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>And nothing more important sees;</b></FONT></td></tr>
 			           <tr>
-			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 000001C23033A5E0</b></FONT></td>
-			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 000001C23033A760</b></FONT></td>
+			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 00000211FA4BA760</b></FONT></td>
+			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 00000211FA4BA790</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A5E0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA760 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A5E0</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA760</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>A paragon of virtue he!</b></FONT></td></tr>
 			           <tr>
-			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 000001C23033A6A0</b></FONT></td>
+			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 00000211FA4BA8B0</b></FONT></td>
 			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 0000000000000000</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A6A0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA8B0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A6A0</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA8B0</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>A dying man with art to soothe,</b></FONT></td></tr>
 			           <tr>
 			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 0000000000000000</b></FONT></td>
 			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 0000000000000000</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A5E0:left -> node000001C23033A6A0 [color="#a6e3a1"]
-	node000001C23033A6D0:left -> node000001C23033A5E0 [color="#a6e3a1"]
-	node000001C23033A760 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA760:left -> node00000211FA4BA8B0 [color="#a6e3a1"]
+	node00000211FA4BA880:left -> node00000211FA4BA760 [color="#a6e3a1"]
+	node00000211FA4BA790 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A760</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA790</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>But what a nuisance it will be,</b></FONT></td></tr>
 			           <tr>
-			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 000001C23033A7F0</b></FONT></td>
-			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 000001C23033A7C0</b></FONT></td>
+			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 00000211FA4BA8E0</b></FONT></td>
+			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 00000211FA4BA7C0</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A7F0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA8E0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A7F0</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA8E0</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>Beneath his head the pillow smooth,</b></FONT></td></tr>
 			           <tr>
-			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 000001C23033A820</b></FONT></td>
+			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 00000211FA4BA6A0</b></FONT></td>
 			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 0000000000000000</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A820 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA6A0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A820</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA6A0</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>And physic bring with mournful face,</b></FONT></td></tr>
 			           <tr>
 			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 0000000000000000</b></FONT></td>
 			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 0000000000000000</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A7F0:left -> node000001C23033A820 [color="#a6e3a1"]
-	node000001C23033A760:left -> node000001C23033A7F0 [color="#a6e3a1"]
-	node000001C23033A7C0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA8E0:left -> node00000211FA4BA6A0 [color="#a6e3a1"]
+	node00000211FA4BA790:left -> node00000211FA4BA8E0 [color="#a6e3a1"]
+	node00000211FA4BA7C0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A7C0</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA7C0</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>Chained to his bedside night and day</b></FONT></td></tr>
 			           <tr>
 			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 0000000000000000</b></FONT></td>
 			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 0000000000000000</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A760:right -> node000001C23033A7C0 [color="#f9e2af"]
-	node000001C23033A6D0:right -> node000001C23033A760 [color="#f9e2af"]
-	node000001C23033A910:left -> node000001C23033A6D0 [color="#a6e3a1"]
-	node000001C23033A700:left -> node000001C23033A910 [color="#a6e3a1"]
-	node000001C23033A610 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA790:right -> node00000211FA4BA7C0 [color="#f9e2af"]
+	node00000211FA4BA880:right -> node00000211FA4BA790 [color="#f9e2af"]
+	node00000211FA4BA700:left -> node00000211FA4BA880 [color="#a6e3a1"]
+	node00000211FA4BA730:left -> node00000211FA4BA700 [color="#a6e3a1"]
+	node00000211FA4BA7F0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A610</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA7F0</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>Without a chance to slip away.</b></FONT></td></tr>
 			           <tr>
-			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 000001C23033A8B0</b></FONT></td>
-			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 000001C23033A640</b></FONT></td>
+			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 00000211FA4BA910</b></FONT></td>
+			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 00000211FA4BA850</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A8B0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA910 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A8B0</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA910</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>To sigh and meditate alone:</b></FONT></td></tr>
 			           <tr>
 			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 0000000000000000</b></FONT></td>
-			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 000001C23033A850</b></FONT></td>
+			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 00000211FA4BA5B0</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A850 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA5B0 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A850</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA5B0</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>When will the devil take his own!”</b></FONT></td></tr>
 			           <tr>
 			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 0000000000000000</b></FONT></td>
 			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 0000000000000000</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A8B0:right -> node000001C23033A850 [color="#f9e2af"]
-	node000001C23033A610:left -> node000001C23033A8B0 [color="#a6e3a1"]
-	node000001C23033A640 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
+	node00000211FA4BA910:right -> node00000211FA4BA5B0 [color="#f9e2af"]
+	node00000211FA4BA7F0:left -> node00000211FA4BA910 [color="#a6e3a1"]
+	node00000211FA4BA850 [shape=plaintext; style=filled; color="#fcf0d2"; fillcolor="#b2d4fc"; label = <
 		         <table BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="#a1c4fd" COLOR="#4f4f4f">
-			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 000001C23033A640</b></FONT></td></tr>
+			           <tr><td align='center' colspan='2'><FONT COLOR='#3b4252'><b>Node: 00000211FA4BA850</b></FONT></td></tr>
 			           <tr><td align='center' colspan='2'><FONT COLOR='#2e8b57'>Value: <b>Ye need dissimulation base</b></FONT></td></tr>
 			           <tr>
 			               <td WIDTH='150' PORT='left'  align='center'><FONT COLOR='#006400'><b>Left: 0000000000000000</b></FONT></td>
 			               <td WIDTH='150' PORT='right' align='center'><FONT COLOR='#b94e48'><b>Right: 0000000000000000</b></FONT></td>
 			           </tr>
 		         </table> >];
-	node000001C23033A610:right -> node000001C23033A640 [color="#f9e2af"]
-	node000001C23033A700:right -> node000001C23033A610 [color="#f9e2af"]
-	node000001C23033A790:left -> node000001C23033A700 [color="#a6e3a1"]
+	node00000211FA4BA7F0:right -> node00000211FA4BA850 [color="#f9e2af"]
+	node00000211FA4BA730:right -> node00000211FA4BA7F0 [color="#f9e2af"]
+	node00000211FA4BA610:left -> node00000211FA4BA730 [color="#a6e3a1"]
 }

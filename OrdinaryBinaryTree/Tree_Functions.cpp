@@ -1,7 +1,13 @@
 #include "tree.h"
 
+/*
+    Создает узел по указателю на указатель равный null
+    используем в Addnode
+
+*/
 TreeErrors CreateNode(BinaryTree **Node, tree_element value)
 {
+    assert(*Node == NULL && Node != NULL);
     *Node = (BinaryTree*)calloc(1, sizeof(BinaryTree));
 
     if (*Node == NULL)
@@ -16,9 +22,10 @@ TreeErrors CreateNode(BinaryTree **Node, tree_element value)
     return OK;
 }
 
+
 TreeErrors FreeTree(BinaryTree **Node)
 {
-    assert(Node);
+    assert(Node); // нулевой указатель может передать сам программист
 
     if (*Node == NULL)
     {
@@ -34,13 +41,16 @@ TreeErrors FreeTree(BinaryTree **Node)
     return OK;
 }
 
-TreeErrors AddNode(BinaryTree **Root, tree_element value)
+TreeErrors AddNode(BinaryTree **Root, tree_element value) // TODO если объекты равны
 {
+    assert(Root != NULL);
+
     if (*Root == NULL)
     {
         return CreateNode(Root, value);
     }
 
+    TreeErrors error_buffer = OK;
     if (CompareValue(value, (*Root)->value) < 0)  // Использование CompareValue
     {
         return AddNode(&((*Root)->left), value);
@@ -177,10 +187,10 @@ TreeErrors DeleteNode(BinaryTree **Root, tree_element value)
 int CompareValue(tree_element a, tree_element b) {
     switch (TREE_ELEMENT_TYPE) {
         case (INT):
-            return a - b; // Сравнение целых чисел
+            return a - b;
         case (STRING):
-            return strcmp(a, b); // Сравнение строк
+            return strcmp(a, b);
         default:
-            return 0; //unknown type
+            return 0;
     }
 }
